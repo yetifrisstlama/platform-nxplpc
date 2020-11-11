@@ -27,6 +27,13 @@
     "zephyr": {
       "package": "framework-zephyr",
       "script": "builder/frameworks/zephyr.py"
+    },
+    "libopencm3": {
+      "package": "framework-libopencm3",
+      "script": "builder/frameworks/libopencm3/libopencm3.py",
+      "description": "The libOpenCM3 framework aims to create a free and open-source firmware library for various ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and Stellaris, NXP LPC, Atmel SAM3, Energy Micro EFM32 and others",
+      "homepage": "http://www.libopencm3.org",
+      "title": "libopencm3"
     }
   },
   "packages": {
@@ -146,6 +153,12 @@
       "optional": true,
       "owner": "platformio",
       "version": "0.0.0-alpha+sha.143df67555"
+    },
+    "framework-libopencm3": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.10000.0"
     },
     "tool-openocd": {
       "type": "debugger",
